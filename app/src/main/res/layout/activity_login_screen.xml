@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginScreen">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+           android:id="@+id/iv"
+            android:layout_width="80dp"
+          android:layout_centerInParent="true"
+            android:src="@drawable/relative_info"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/colorBlue"
+            android:layout_marginLeft="80dp"
+            android:layout_below="@+id/iv"
+            android:layout_width="wrap_content"
+            android:text="Absolute Protector"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/rl"
+        android:layout_marginTop="20dp"
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+
+                android:textColor="@color/colorBlue"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/tv2"
+                android:text="Enter Your Name*"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:id="@+id/et1"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="3dp"
+          android:layout_below="@+id/tv2"
+            android:background="@drawable/edit_text"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rl1"
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+
+            android:textColor="@color/colorBlue"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tv1"
+            android:text="Enter Your Email ID*"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText
+            android:paddingLeft="5dp"
+            android:id="@+id/et2"
+
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/tv1"
+            android:background="@drawable/edit_text"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rl2"
+        android:id="@+id/rl3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+
+            android:textColor="@color/colorBlue"
+            android:layout_marginLeft="20dp"
+            android:text="Enter Your Mobile Number*"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv3"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:paddingLeft="5dp"
+android:inputType="number"
+            android:id="@+id/et3"
+
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/tv3"
+            android:background="@drawable/edit_text"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rl3"
+        android:id="@+id/rl4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+
+            android:textColor="@color/colorBlue"
+            android:id="@+id/tv4"
+            android:text="Enter Your Device Id*"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:paddingLeft="5dp"
+android:inputType="number"
+            android:id="@+id/et4"
+
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/tv4"
+            android:background="@drawable/edit_text"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rl4"
+        android:id="@+id/rl5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+
+            android:textColor="@color/colorBlue"
+            android:text="Enter your Code*"
+            android:id="@+id/tv5"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:paddingLeft="5dp"
+android:inputType="number"
+            android:id="@+id/et5"
+
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/tv5"
+            android:background="@drawable/edit_text"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/il6"
+                android:layout_below="@+id/rl5"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/checkTerms"
+                    android:checked="true"
+                    android:textColor="@color/colorBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+
+                    android:id="@+id/viewTerms"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/checkTerms"
+                    android:text="@string/agree_terms_conditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_below="@+id/il6"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:id="@+id/Registration_submit"
+                    android:background="@drawable/button_view"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:id="@+id/forgot_code"
+                    android:background="@drawable/button_view"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Forgot Code?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

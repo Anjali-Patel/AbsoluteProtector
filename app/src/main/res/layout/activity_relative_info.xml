@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeInfoActivity">
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+           android:src="@drawable/ic_arrow_back_white_24dp"
+
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:text="Relative Info"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+
+        android:gravity="center_horizontal"
+android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginLeft="5dp"
+           android:layout_marginTop="80dp"
+            android:text="Enter Your Relative Information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:padding="10dp"
+android:hint="Mobile No.1"
+            android:inputType="number"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <EditText
+            android:padding="10dp"
+            android:hint="Mobile No.2"
+            android:inputType="number"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <EditText
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:hint="Mobile No.3"
+            android:inputType="number"
+
+            android:background="@drawable/edit_text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            />
+        <EditText
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:hint="Email ID1"
+
+            android:background="@drawable/edit_text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            />
+        <EditText
+            android:layout_marginTop="15dp"
+            android:hint="Email ID2"
+
+            android:background="@drawable/edit_text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+
+            android:layout_width="match_parent"
+            />
+        <EditText
+            android:layout_marginTop="15dp"
+android:hint="Email ID3"
+            android:padding="10dp"
+            android:background="@drawable/edit_text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            />
+        <Button
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/button_view"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
